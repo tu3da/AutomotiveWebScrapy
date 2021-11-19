@@ -5,8 +5,11 @@
 
 import scrapy
 
-
 class AutomotivewebscrapyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    url = scrapy.Field()
+    title = scrapy.Field()
+    htags = scrapy.Field()
+    body = scrapy.Field()
+    scraping_datetime = scrapy.Field()
